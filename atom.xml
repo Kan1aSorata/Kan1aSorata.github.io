@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kan1aSorata的个人博客</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-10-08T02:13:34.000Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Kan1aSorata</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2020/10/30/DataStructure(C++)%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2020/10/30/DataStructure(C++)%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-10-30T07:53:24.000Z</published>
+    <updated>2020-10-08T02:13:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="执行频度"><a href="#执行频度" class="headerlink" title="执行频度"></a>执行频度</h3><p>一个语句执行直至该语句结束时总共执行的次数</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;执行频度&quot;&gt;&lt;a href=&quot;#执行频度&quot; class=&quot;headerlink&quot; title=&quot;执行频度&quot;&gt;&lt;/a&gt;执行频度&lt;/h3&gt;&lt;p&gt;一个语句执行直至该语句结束时总共执行的次数&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>每周学习总结</title>
+    <link href="http://example.com/2020/10/18/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93/"/>
+    <id>http://example.com/2020/10/18/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93/</id>
+    <published>2020-10-18T01:41:00.000Z</published>
+    <updated>2020-10-18T15:03:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="我做了什么"><a href="#我做了什么" class="headerlink" title="我做了什么"></a>我做了什么</h3><ul><li><p>观看<a href="https://developer.apple.com/videos/play/wwdc2019/206/">Introducing SF Symbols</a></p></li><li><p>了解??、||、&amp;&amp;的实现原理</p><blockquote><p>||、&amp;&amp;具有短路特性，使得语句运行更快，??也有类似特性</p><p>@autoclosure 省略很多代码从而使代码更加优雅</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> test = <span class="number">1</span> &lt; <span class="number">3</span> || &#123;() -&gt; <span class="type">Bool</span> <span class="keyword">in</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">2</span> &gt; <span class="number">3</span></span><br><span class="line">&#125;()</span><br></pre></td></tr></table></figure><p>通过使用@autoclosure关键词后：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let test &#x3D; 1 &lt; 3 || 2 &gt; 3</span><br></pre></td></tr></table></figure></blockquote></li></ul><h3 id="我打算做什么"><a href="#我打算做什么" class="headerlink" title="我打算做什么"></a>我打算做什么</h3><ul><li>继续swiftgg和swifter一起看</li><li>写一个还算优雅的界面去写周报</li><li>天气预报App</li><li>吃饭的时候刷刷Developer</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;我做了什么&quot;&gt;&lt;a href=&quot;#我做了什么&quot; class=&quot;headerlink&quot; title=&quot;我做了什么&quot;&gt;&lt;/a&gt;我做了什么&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;观看&lt;a href=&quot;https://developer.apple.com/videos/pla</summary>
+      
+    
+    
+    
+    <category term="总结" scheme="http://example.com/categories/%E6%80%BB%E7%BB%93/"/>
+    
+    
+    <category term="ifLab" scheme="http://example.com/tags/ifLab/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++学习笔记</title>
+    <link href="http://example.com/2020/10/10/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2020/10/10/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-10-10T01:41:00.000Z</published>
+    <updated>2020-10-18T15:03:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="关于判断输入是否正确并提示用户重新输入直至正确的方法"><a href="#关于判断输入是否正确并提示用户重新输入直至正确的方法" class="headerlink" title="关于判断输入是否正确并提示用户重新输入直至正确的方法"></a>关于判断输入是否正确并提示用户重新输入直至正确的方法</h3><p>题目：用户输入年龄判断输入是否合法直至输入成功</p><p><strong>方法一：使用goto语句(不推荐)</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Again: <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Enter your age: &quot;</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; age;</span><br><span class="line">    <span class="keyword">if</span>(age &lt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Error, exprct input an integer(&gt;0)&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="keyword">goto</span> Again;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p><strong>方法二：使用while循环控制</strong></p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> isWrong = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">while</span>(isWrong)&#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Enter your age: &quot;</span>;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; age;</span><br><span class="line">        <span class="keyword">if</span> (age &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            isWrong = <span class="literal">false</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Error, exprct input an integer(&gt;0)&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="书写浮点数"><a href="#书写浮点数" class="headerlink" title="书写浮点数"></a>书写浮点数</h3><p>除了使用小数点书写小数，还可以通过科学技术法书写，这对于使用极小浮点数有好处。</p><p>例如当我需要声明一个小数值为0.00000000000000000911，我可以直接声明</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> b = <span class="number">0.00000000000000000911</span>;</span><br></pre></td></tr></table></figure><p>更简单的表达方法是</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> a = <span class="number">9.11e-18</span>;</span><br></pre></td></tr></table></figure><h3 id="结构数组"><a href="#结构数组" class="headerlink" title="结构数组"></a>结构数组</h3><p>c++支持对结构对象创建数组，其方法与创建普通数组类似</p><p>例如现在我拥有一个名为person的结构体</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">person</span> &#123;</span></span><br><span class="line">    <span class="keyword">char</span> name[<span class="number">20</span>];</span><br><span class="line">    <span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>我可以通过类似声明数组的方式一次性初始化多个person类型的元素</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">person stdent[<span class="number">2</span>] = &#123;</span><br><span class="line">        &#123;<span class="string">&quot;Alice&quot;</span>, <span class="number">20</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;Rylaris&quot;</span>, <span class="number">13</span>&#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;关于判断输入是否正确并提示用户重新输入直至正确的方法&quot;&gt;&lt;a href=&quot;#关于判断输入是否正确并提示用户重新输入直至正确的方法&quot; class=&quot;headerlink&quot; title=&quot;关于判断输入是否正确并提示用户重新输入直至正确的方法&quot;&gt;&lt;/a&gt;关于判断输入是否</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="http://example.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="c++" scheme="http://example.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用GitHub Projects创建个人TODO清单</title>
+    <link href="http://example.com/2020/08/21/%E5%88%A9%E7%94%A8Github%20Projects%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BATODO%E8%AF%B7%E5%8D%95/"/>
+    <id>http://example.com/2020/08/21/%E5%88%A9%E7%94%A8Github%20Projects%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BATODO%E8%AF%B7%E5%8D%95/</id>
+    <published>2020-08-21T01:41:00.000Z</published>
+    <updated>2020-10-18T15:03:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>写在前面：第二次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~</p><h2 id="登入GitHub并创建你的Project"><a href="#登入GitHub并创建你的Project" class="headerlink" title="登入GitHub并创建你的Project"></a>登入<a href="https://github.com/">GitHub</a>并创建你的Project</h2><p>很简单，进入GitHub个人页面之后点击首页导航栏中的 <em>+</em> -&gt; New project</p><p><img src="https://i.loli.net/2020/08/21/vglDh5VKzOtXsoA.png"></p><p>进入后更改Project board name, Project template和Visibility，分别用于你的项目名称、选择项目模版和隐私权限设置（即谁能看到这个project，Project template选择Automated kanban</p><p><img src="https://i.loli.net/2020/08/21/kDnAUx6gGC4XpyL.png"></p><p>最后点击Create project。</p><h2 id="创建TODO"><a href="#创建TODO" class="headerlink" title="创建TODO"></a>创建TODO</h2><p>进入project后的页面是这样的由于你选择了预设的模版已经给你创建好了三列空间</p><p><img src="https://i.loli.net/2020/08/21/C6FH2LIsc3hjOiA.png"></p><p>你可以在这些空间内新建多个TODO块进行分类，方法很简单，直接点击Column上的 <em>+</em> 即可</p><p><img src="https://i.loli.net/2020/08/21/NRZcPxvwed3HFL9.png"></p><p>若需要更多的Column，请点击最右侧的Add a Column</p><p><img src="https://i.loli.net/2020/08/21/e46HUWBZlsFAaG8.png"></p><p>若要对当前Column/Card名称进行编辑，点击对应的 <em>···</em> </p><p><img src="https://i.loli.net/2020/08/21/thkRZEWqM9GTL17.png"></p><p><img src="https://i.loli.net/2020/08/21/LaN9Z5SFefzEUKq.png"></p><h2 id="编辑Note"><a href="#编辑Note" class="headerlink" title="编辑Note"></a>编辑Note</h2><p>GitHub projects支持markdown，我会把我常用的markdown补充在下面便于参考</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> [ ] 待办事项</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/08/21/9WLRhcinMBmxqSk.png"></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**字体加粗**</span> (常用于标题)</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2020/08/21/zIRDSvEgK4qJsCO.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;写在前面：第二次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~&lt;/p&gt;
+&lt;h2 id=&quot;登入GitHub并创建你的Project&quot;&gt;&lt;a href=&quot;#登入GitHub并创建你的Project&quot; class=&quot;headerlink&quot; title=&quot;登入GitH</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Github" scheme="http://example.com/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于github Pages使用Hexo在Windows环境下搭建个人博客</title>
+    <link href="http://example.com/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2020-01-07T01:41:00.000Z</published>
+    <updated>2020-10-18T15:03:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>写在前面：首次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~</p><h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>Git是搭建hexo的基础，我们要使用他输入许多命令，可以理解为好用的Windows cmd指令<br><a href="https://gitforwindows.org/">点击此处下载Git</a><br>下载并安装，一路点击下一步。<br>完成后点开Windows键在最近添加的位置有一个软件名为<strong>Git Bash</strong>，我们稍后就用它来配置hexo。<br>打开Git Bash，运行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure><p>以检测是否安装成功<br>若出现<br><a href="https://sm.ms/image/26h51tfA3UPzJLQ" target="_blank"><img src="https://i.loli.net/2020/01/07/26h51tfA3UPzJLQ.jpg" ></a><br>则成功。</p><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a href="https://nodejs.org/en/download/">Node.js</a>对于Windows用户来说，选择LTS版本即可。<br>同样在Git Bash中运行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><p>若出现<br><a href="https://sm.ms/image/r5B4iwhkDGj6sgK" target="_blank"><img src="https://i.loli.net/2020/01/07/r5B4iwhkDGj6sgK.jpg" ></a><br><a href="https://sm.ms/image/A2lt6marBjGpZko" target="_blank"><img src="https://i.loli.net/2020/01/07/A2lt6marBjGpZko.jpg" ></a><br>则成功。</p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在本地创建一个Blog文件夹（在哪里都可以），然后打开文件夹，在该目录下单击右键，在右键选单中选择<strong>Git Bash Here</strong>，并在弹出的框中输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>等待安装完成后输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><p>若出现<br><a href="https://sm.ms/image/9yeKcJf3gtnLkUH" target="_blank"><img src="https://i.loli.net/2020/01/07/9yeKcJf3gtnLkUH.jpg" ></a><br>则成功。<br>至此，前期的环境搭建就已经完成了。</p><h1 id="配置Hexo客户端"><a href="#配置Hexo客户端" class="headerlink" title="配置Hexo客户端"></a>配置Hexo客户端</h1><p>首先，我们对hexo进行初始化，在你刚刚创建的文件夹中右键打开Git Bash，输入指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init (KandaS)</span><br></pre></td></tr></table></figure><p><em>注意：()中的名字可进行自定义，任取一个你喜欢的即可，()只是为了便于解释，实际输入中请不要输入。</em><br>然后输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd (KandaS)</span><br></pre></td></tr></table></figure><p>进入你刚刚创建的文件夹，如图：<br><a href="https://sm.ms/image/9yeKcJf3gtnLkUH" target="_blank"><img src="https://i.loli.net/2020/01/07/9yeKcJf3gtnLkUH.jpg" ></a><br>接着输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><p>等待任务完成后，当前目录下就会多出大约</p><ul><li>node_modules: 依赖包</li><li>public：存放生成的页面</li><li>scaffolds：生成文章的一些模板</li><li>source：用来存放你的文章</li><li>themes：主题</li><li>_config.yml: 博客的配置文件<br>这些文件夹，对应无缺少，则成功。<br>此时输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>如图<br><a href="https://sm.ms/image/icprj58xyhD2PeF" target="_blank"><img src="https://i.loli.net/2020/01/07/icprj58xyhD2PeF.jpg" ></a><br>在浏览器中输入对话框中给出的<strong>localhost:4000</strong>即可查看你刚刚生成的博客，但当前博客还处于一个初始阶段，我们要开始着手对其个性化。<h1 id="获取你的博客控制权并个性化你的博客"><a href="#获取你的博客控制权并个性化你的博客" class="headerlink" title="获取你的博客控制权并个性化你的博客"></a>获取你的博客控制权并个性化你的博客</h1><h2 id="在Github中创建个人仓库用于存储你的博客"><a href="#在Github中创建个人仓库用于存储你的博客" class="headerlink" title="在Github中创建个人仓库用于存储你的博客"></a>在Github中创建个人仓库用于存储你的博客</h2><a href="Github.com">Github</a>是个神奇的网站，如果你还没有账号，还不快去申请一个~<br>登入你的Github账号，点击左边的<em>New</em>（若你还没有创建过仓库，则点击左侧一大段英文里的一段蓝字<em>creat a Repository</em>，大概是叫这个，反正就是意思是创建一个Repository，英语再不济也能找到）。<br>点击后你可以看到如下界面，在第一个<strong>Repository name</strong>下填写<strong>Owner.github.io</strong>（请注意这个Owner并不是真的让你把Owner这个单词填写进去，你要做的是用你的用户名替换掉Owner并填写，例如我的ID是Kan1aSorata，则用Kan1aSorata替换Owner，那么我需要在<strong>Repository name</strong>下填写的内容就是<strong>Kan1aSorata.github.io</strong>）<br><a href="https://sm.ms/image/eH2Sy7VE4ZwMhDj" target="_blank"><img src="https://i.loli.net/2020/01/07/eH2Sy7VE4ZwMhDj.jpg" ></a><br>PS:我的这个地址已经被我自己注册过了，所以会报错，正常情况是一个绿色的勾勾。<h2 id="生成SSH添加到GitHub"><a href="#生成SSH添加到GitHub" class="headerlink" title="生成SSH添加到GitHub"></a>生成SSH添加到GitHub</h2>回到刚刚的Git Bash里，输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;这里写你的Github用户名&quot;</span><br><span class="line">git config --global user.email &quot;这里写你的Github邮箱&quot;</span><br></pre></td></tr></table></figure>用指令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>来检验与你的Github信息是否相同，不相同的话再来一遍，这是一个<strong>关键</strong>步骤，请不要疏忽。</li></ul><p>一切都很完美之后，输入指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;这里写你的Github邮箱&quot;</span><br></pre></td></tr></table></figure><p>不管他问什么，点回车就完事了，当运行结束时，你会在你的C:\Users\name里找到一个文件名为.ssh的文件夹，打开里面有二或三个文件，找到文件名为<strong>id_rsa.pub</strong>的文件，右键以记事本形式打开，复制其中的所有代码。<br>打开Github Repository的Settings，如图<br><a href="https://sm.ms/image/lrGvRuWq3FMVosz" target="_blank"><img src="https://i.loli.net/2020/01/07/lrGvRuWq3FMVosz.jpg" ></a><br>找到Personal settings里的SSH and GPG keys<br><a href="https://sm.ms/image/K6qXBWDS3lICMva" target="_blank"><img src="https://i.loli.net/2020/01/07/K6qXBWDS3lICMva.jpg" ></a><br>点击<strong>New SSH key</strong>，Title输入Hexo，key就把你刚刚复制的一大串密钥粘贴进去。<br>别忘了点击保存！<br>输入指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>如果出现下图<br><a href="https://sm.ms/image/cmQSxy7ketbzKpX" target="_blank"><img src="https://i.loli.net/2020/01/07/cmQSxy7ketbzKpX.jpg" ></a><br>则成功。</p><h2 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h2><p>现在，你就可以开始建立Github与你的Hexo之间的关系了，也就是将你的博客部署到Github上。<br>首先打开你的博客所在文件夹，找到<strong>_config.yml</strong>，打开后翻到最下面，在deploy后面对应着加上下面的代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;这里写你的Github用户名&#x2F;这里也写你的Github用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>然后在你的Git Bash中输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>然后等待运行结束，在输入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>其中 hexo clean 清除了你之前生成的东西，也可以不加；<br>hexo generate 可以用 hexo g 缩写；<br>hexo deploy 可以用 hexo d 缩写。<br>初次进行<strong>hexo deploy</strong>指令时可能会让你多次输入Github账号密码，跟着指示输入就完事了。<br>若提示<br><a href="https://sm.ms/image/icprj58xyhD2PeF" target="_blank"><img src="https://i.loli.net/2020/01/07/icprj58xyhD2PeF.jpg" ></a><br>（中间部分不一定相同，只需对照开头和结尾即可）<br>则成功。</p><p>到这里Hexo的基本搭建已经完成，下次我会对于个性化你的博客制作更深入的教程。</p><h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;写在前面：首次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~&lt;/p&gt;
+&lt;h1 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;headerlink&quot; title=&quot;环境搭建&quot;&gt;&lt;/a&gt;环境搭建&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>

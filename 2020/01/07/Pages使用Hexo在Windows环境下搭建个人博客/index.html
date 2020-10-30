@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang=cn>
+<head>
+    <meta charset="utf-8">
+    
+    <title>基于github Pages使用Hexo在Windows环境下搭建个人博客 | Kan1aSorata的个人博客</title>
+    
+    
+        <meta name="keywords" content="Hexo" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="写在前面：首次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~ 环境搭建安装GitGit是搭建hexo的基础，我们要使用他输入许多命令，可以理解为好用的Windows cmd指令点击此处下载Git下载并安装，一路点击下一步。完成后点开Windows键在最近添加的位置有一个软件名为Git Bash，我们稍后就用它来配置hexo。打开Git Bash，运行 1git --version 以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于github Pages使用Hexo在Windows环境下搭建个人博客">
+<meta property="og:url" content="http://example.com/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Kan1aSorata的个人博客">
+<meta property="og:description" content="写在前面：首次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~ 环境搭建安装GitGit是搭建hexo的基础，我们要使用他输入许多命令，可以理解为好用的Windows cmd指令点击此处下载Git下载并安装，一路点击下一步。完成后点开Windows键在最近添加的位置有一个软件名为Git Bash，我们稍后就用它来配置hexo。打开Git Bash，运行 1git --version 以">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/26h51tfA3UPzJLQ.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/r5B4iwhkDGj6sgK.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/A2lt6marBjGpZko.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/9yeKcJf3gtnLkUH.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/9yeKcJf3gtnLkUH.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/icprj58xyhD2PeF.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/eH2Sy7VE4ZwMhDj.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/lrGvRuWq3FMVosz.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/K6qXBWDS3lICMva.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/cmQSxy7ketbzKpX.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/07/icprj58xyhD2PeF.jpg">
+<meta property="article:published_time" content="2020-01-07T01:41:00.000Z">
+<meta property="article:modified_time" content="2020-10-18T15:03:58.000Z">
+<meta property="article:author" content="Kan1aSorata">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/01/07/26h51tfA3UPzJLQ.jpg">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Kan1aSorata的个人博客" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Kan1aSorata的个人博客</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Entradas',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>Categorias</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            总结
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/10/18/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93/">每周学习总结</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            教程
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">基于github Pages使用Hexo在Windows环境下搭建个人博客</a></li>  <li class="file"><a href="/2020/08/21/%E5%88%A9%E7%94%A8Github%20Projects%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BATODO%E8%AF%B7%E5%8D%95/">利用GitHub Projects创建个人TODO清单</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            笔记
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2020/10/10/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">c++学习笔记</a></li>  </ul> 
+                    </li> 
+                     <li class="file"><a href="/2020/10/30/DataStructure(C++)%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"></a></li>  </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-Pages使用Hexo在Windows环境下搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+            <time datetime="2020-01-07T01:41:00.000Z" itemprop="datePublished">2020-01-07</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/Pages使用Hexo在Windows环境下搭建个人博客.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/Pages使用Hexo在Windows环境下搭建个人博客.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/Pages使用Hexo在Windows环境下搭建个人博客.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            基于github Pages使用Hexo在Windows环境下搭建个人博客
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <p>写在前面：首次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~</p>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>Git是搭建hexo的基础，我们要使用他输入许多命令，可以理解为好用的Windows cmd指令<br><a target="_blank" rel="noopener" href="https://gitforwindows.org/">点击此处下载Git</a><br>下载并安装，一路点击下一步。<br>完成后点开Windows键在最近添加的位置有一个软件名为<strong>Git Bash</strong>，我们稍后就用它来配置hexo。<br>打开Git Bash，运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<p>以检测是否安装成功<br>若出现<br><a href="https://sm.ms/image/26h51tfA3UPzJLQ" target="_blank"><img src="https://i.loli.net/2020/01/07/26h51tfA3UPzJLQ.jpg" ></a><br>则成功。</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>对于Windows用户来说，选择LTS版本即可。<br>同样在Git Bash中运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>若出现<br><a href="https://sm.ms/image/r5B4iwhkDGj6sgK" target="_blank"><img src="https://i.loli.net/2020/01/07/r5B4iwhkDGj6sgK.jpg" ></a><br><a href="https://sm.ms/image/A2lt6marBjGpZko" target="_blank"><img src="https://i.loli.net/2020/01/07/A2lt6marBjGpZko.jpg" ></a><br>则成功。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在本地创建一个Blog文件夹（在哪里都可以），然后打开文件夹，在该目录下单击右键，在右键选单中选择<strong>Git Bash Here</strong>，并在弹出的框中输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>等待安装完成后输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<p>若出现<br><a href="https://sm.ms/image/9yeKcJf3gtnLkUH" target="_blank"><img src="https://i.loli.net/2020/01/07/9yeKcJf3gtnLkUH.jpg" ></a><br>则成功。<br>至此，前期的环境搭建就已经完成了。</p>
+<h1 id="配置Hexo客户端"><a href="#配置Hexo客户端" class="headerlink" title="配置Hexo客户端"></a>配置Hexo客户端</h1><p>首先，我们对hexo进行初始化，在你刚刚创建的文件夹中右键打开Git Bash，输入指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init (KandaS)</span><br></pre></td></tr></table></figure>
+<p><em>注意：()中的名字可进行自定义，任取一个你喜欢的即可，()只是为了便于解释，实际输入中请不要输入。</em><br>然后输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd (KandaS)</span><br></pre></td></tr></table></figure>
+<p>进入你刚刚创建的文件夹，如图：<br><a href="https://sm.ms/image/9yeKcJf3gtnLkUH" target="_blank"><img src="https://i.loli.net/2020/01/07/9yeKcJf3gtnLkUH.jpg" ></a><br>接着输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>等待任务完成后，当前目录下就会多出大约</p>
+<ul>
+<li>node_modules: 依赖包</li>
+<li>public：存放生成的页面</li>
+<li>scaffolds：生成文章的一些模板</li>
+<li>source：用来存放你的文章</li>
+<li>themes：主题</li>
+<li>_config.yml: 博客的配置文件<br>这些文件夹，对应无缺少，则成功。<br>此时输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+如图<br><a href="https://sm.ms/image/icprj58xyhD2PeF" target="_blank"><img src="https://i.loli.net/2020/01/07/icprj58xyhD2PeF.jpg" ></a><br>在浏览器中输入对话框中给出的<strong>localhost:4000</strong>即可查看你刚刚生成的博客，但当前博客还处于一个初始阶段，我们要开始着手对其个性化。<h1 id="获取你的博客控制权并个性化你的博客"><a href="#获取你的博客控制权并个性化你的博客" class="headerlink" title="获取你的博客控制权并个性化你的博客"></a>获取你的博客控制权并个性化你的博客</h1><h2 id="在Github中创建个人仓库用于存储你的博客"><a href="#在Github中创建个人仓库用于存储你的博客" class="headerlink" title="在Github中创建个人仓库用于存储你的博客"></a>在Github中创建个人仓库用于存储你的博客</h2><a href="Github.com">Github</a>是个神奇的网站，如果你还没有账号，还不快去申请一个~<br>登入你的Github账号，点击左边的<em>New</em>（若你还没有创建过仓库，则点击左侧一大段英文里的一段蓝字<em>creat a Repository</em>，大概是叫这个，反正就是意思是创建一个Repository，英语再不济也能找到）。<br>点击后你可以看到如下界面，在第一个<strong>Repository name</strong>下填写<strong>Owner.github.io</strong>（请注意这个Owner并不是真的让你把Owner这个单词填写进去，你要做的是用你的用户名替换掉Owner并填写，例如我的ID是Kan1aSorata，则用Kan1aSorata替换Owner，那么我需要在<strong>Repository name</strong>下填写的内容就是<strong>Kan1aSorata.github.io</strong>）<br><a href="https://sm.ms/image/eH2Sy7VE4ZwMhDj" target="_blank"><img src="https://i.loli.net/2020/01/07/eH2Sy7VE4ZwMhDj.jpg" ></a><br>PS:我的这个地址已经被我自己注册过了，所以会报错，正常情况是一个绿色的勾勾。<h2 id="生成SSH添加到GitHub"><a href="#生成SSH添加到GitHub" class="headerlink" title="生成SSH添加到GitHub"></a>生成SSH添加到GitHub</h2>回到刚刚的Git Bash里，输入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;这里写你的Github用户名&quot;</span><br><span class="line">git config --global user.email &quot;这里写你的Github邮箱&quot;</span><br></pre></td></tr></table></figure>
+用指令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+来检验与你的Github信息是否相同，不相同的话再来一遍，这是一个<strong>关键</strong>步骤，请不要疏忽。</li>
+</ul>
+<p>一切都很完美之后，输入指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;这里写你的Github邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>不管他问什么，点回车就完事了，当运行结束时，你会在你的C:\Users\name里找到一个文件名为.ssh的文件夹，打开里面有二或三个文件，找到文件名为<strong>id_rsa.pub</strong>的文件，右键以记事本形式打开，复制其中的所有代码。<br>打开Github Repository的Settings，如图<br><a href="https://sm.ms/image/lrGvRuWq3FMVosz" target="_blank"><img src="https://i.loli.net/2020/01/07/lrGvRuWq3FMVosz.jpg" ></a><br>找到Personal settings里的SSH and GPG keys<br><a href="https://sm.ms/image/K6qXBWDS3lICMva" target="_blank"><img src="https://i.loli.net/2020/01/07/K6qXBWDS3lICMva.jpg" ></a><br>点击<strong>New SSH key</strong>，Title输入Hexo，key就把你刚刚复制的一大串密钥粘贴进去。<br>别忘了点击保存！<br>输入指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>如果出现下图<br><a href="https://sm.ms/image/cmQSxy7ketbzKpX" target="_blank"><img src="https://i.loli.net/2020/01/07/cmQSxy7ketbzKpX.jpg" ></a><br>则成功。</p>
+<h2 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h2><p>现在，你就可以开始建立Github与你的Hexo之间的关系了，也就是将你的博客部署到Github上。<br>首先打开你的博客所在文件夹，找到<strong>_config.yml</strong>，打开后翻到最下面，在deploy后面对应着加上下面的代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;这里写你的Github用户名&#x2F;这里也写你的Github用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>然后在你的Git Bash中输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>然后等待运行结束，在输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>其中 hexo clean 清除了你之前生成的东西，也可以不加；<br>hexo generate 可以用 hexo g 缩写；<br>hexo deploy 可以用 hexo d 缩写。<br>初次进行<strong>hexo deploy</strong>指令时可能会让你多次输入Github账号密码，跟着指示输入就完事了。<br>若提示<br><a href="https://sm.ms/image/icprj58xyhD2PeF" target="_blank"><img src="https://i.loli.net/2020/01/07/icprj58xyhD2PeF.jpg" ></a><br>（中间部分不一定相同，只需对照开头和结尾即可）<br>则成功。</p>
+<p>到这里Hexo的基本搭建已经完成，下次我会对于个性化你的博客制作更深入的教程。</p>
+<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2020/08/21/%E5%88%A9%E7%94%A8Github%20Projects%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BATODO%E8%AF%B7%E5%8D%95/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Más nuevo</strong>
+            <div class="article-nav-title">
+                
+                    利用GitHub Projects创建个人TODO清单
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            Kan1aSorata &copy; 2020 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
