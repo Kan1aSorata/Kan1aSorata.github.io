@@ -47,7 +47,7 @@
     <link href="http://example.com/2020/11/09/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93_Week3%20/"/>
     <id>http://example.com/2020/11/09/%E6%AF%8F%E5%91%A8%E6%80%BB%E7%BB%93_Week3%20/</id>
     <published>2020-11-09T01:41:00.000Z</published>
-    <updated>2020-11-09T08:53:06.499Z</updated>
+    <updated>2020-11-22T17:23:22.335Z</updated>
     
     <content type="html"><![CDATA[<h3 id="我做了什么"><a href="#我做了什么" class="headerlink" title="我做了什么"></a>我做了什么</h3><ul><li><p>《iOS移动开发从入门到精通》6-7章</p><p><img src="https://i.loli.net/2020/11/09/VaeBWJSEgbiYGZ2.png"></p></li><li><p>给Weather正式写了大致框架，加入了城市列表</p><p><img src="https://i.loli.net/2020/11/09/VynHQuPUzR9tXi2.png"></p></li><li><p>学习数据结构LinkList</p></li></ul><h3 id="我打算做什么"><a href="#我打算做什么" class="headerlink" title="我打算做什么"></a>我打算做什么</h3><ul><li>继续看《iOS移动开发从入门到精通》</li><li>看<a href="https://space.bilibili.com/14767902/channel/detail?cid=9243">Developing iOS 10 Apps with Swift 2017 Stanford CS193P</a></li><li>Weather实现点击城市列表跳转天气页面功能</li></ul>]]></content>
     
