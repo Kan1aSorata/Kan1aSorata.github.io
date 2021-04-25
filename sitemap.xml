@@ -4,7 +4,7 @@
   <url>
     <loc>http://example.com/2021/03/28/LeetCode%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/</loc>
     
-    <lastmod>2021-04-01</lastmod>
+    <lastmod>2021-04-25</lastmod>
     
   </url>
   
@@ -102,7 +102,21 @@
   </url>
   
   <url>
+    <loc>http://example.com/tags/LeetCode/</loc>
+    <lastmod>2021-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/Hexo/</loc>
+    <lastmod>2021-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Linux/</loc>
     <lastmod>2021-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -117,20 +131,6 @@
   
   <url>
     <loc>http://example.com/tags/ifLab/</loc>
-    <lastmod>2021-04-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/Linux/</loc>
-    <lastmod>2021-04-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/LeetCode/</loc>
     <lastmod>2021-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
