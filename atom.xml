@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-25T06:21:59.322Z</updated>
+  <updated>2021-04-28T08:45:02.670Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Swift之注释的规范</title>
+    <link href="http://example.com/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/"/>
+    <id>http://example.com/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/</id>
+    <published>2021-04-27T20:23:00.000Z</published>
+    <updated>2021-04-28T08:45:02.670Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Swift注释规范以及文档注释"><a href="#Swift注释规范以及文档注释" class="headerlink" title="Swift注释规范以及文档注释"></a>Swift注释规范以及文档注释</h1><h3 id="注释基本规范"><a href="#注释基本规范" class="headerlink" title="注释基本规范"></a>注释基本规范</h3><h4 id="一般注释"><a href="#一般注释" class="headerlink" title="一般注释"></a>一般注释</h4><ol><li><p>普通注释：一般用于提示编码者、逻辑注释。</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这是一个注释</span></span><br></pre></td></tr></table></figure></li></ol><ol start="2"><li><p>多行注释</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">这是一个</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></li></ol><h4 id="一般注释-1"><a href="#一般注释-1" class="headerlink" title="一般注释"></a>一般注释</h4><ol><li><p>MARK：代码文件标记，可以显示代码的基本文件结构</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// MARK: - Properties</span></span><br><span class="line"><span class="comment">// MARK: - Initialization</span></span><br><span class="line"><span class="comment">// MARK: - IBAction Method</span></span><br><span class="line"><span class="comment">// MARK: - XXXDelegate</span></span><br></pre></td></tr></table></figure></li><li><p>TODO：待完成标记，代表此处的功能未完善需要继续开发</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// <span class="doctag">TODO:</span> - 待完善的功能</span></span><br></pre></td></tr></table></figure></li><li><p>FIXME：检查标记，临时修改变量或者注释掉部分代码用于调试时标记，继续写代码时建议全局搜索一下</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//<span class="doctag">FIXME:</span> - 注释代码用于调试</span></span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Swift注释规范以及文档注释&quot;&gt;&lt;a href=&quot;#Swift注释规范以及文档注释&quot; class=&quot;headerlink&quot; title=&quot;Swift注释规范以及文档注释&quot;&gt;&lt;/a&gt;Swift注释规范以及文档注释&lt;/h1&gt;&lt;h3 id=&quot;注释基本规范&quot;&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="Swift学习笔记" scheme="http://example.com/categories/Swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Swift" scheme="http://example.com/tags/Swift/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode个人题解（1-100题）</title>
