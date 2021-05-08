@@ -3,18 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2021 | Kan1aSorata的个人博客</title>
+    <title>Swift之代码延时执行 | Kan1aSorata的个人博客</title>
     
     
-        <meta name="keywords" content="Kan1aSorata的个人博客" />
+        <meta name="keywords" content="Swift" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Kan1aSorata的个人博客">
-<meta property="og:url" content="http://example.com/archives/2021/index.html">
+    <meta name="description" content="Swift之代码延时执行的N个方法GCD（主线程&#x2F;子线程）1234567var timeWait &#x3D; 10DispatchQueue.main.asyncAfter(deadline: .now() + timeWait) &amp;#123;	&#x2F;&#x2F;Do what you want&amp;#125;DispatchQueue.global.asyncAfter(deadline: .now + timeWait">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift之代码延时执行">
+<meta property="og:url" content="http://example.com/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Kan1aSorata的个人博客">
+<meta property="og:description" content="Swift之代码延时执行的N个方法GCD（主线程&#x2F;子线程）1234567var timeWait &#x3D; 10DispatchQueue.main.asyncAfter(deadline: .now() + timeWait) &amp;#123;	&#x2F;&#x2F;Do what you want&amp;#125;DispatchQueue.global.asyncAfter(deadline: .now + timeWait">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-05-08T03:08:00.000Z">
+<meta property="article:modified_time" content="2021-05-08T03:59:12.222Z">
 <meta property="article:author" content="Kan1aSorata">
+<meta property="article:tag" content="Swift">
 <meta name="twitter:card" content="summary">
     
 
@@ -174,13 +179,13 @@
         
         
          <ul class="unstyled" id="tree" > 
-                    <li class="directory">
+                    <li class="directory open">
                         <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
+                            <i class="fa fa-folder-open"></i>
                             &nbsp;
                             Swift学习笔记
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/">Swift之注释的规范</a></li>  <li class="file"><a href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">Swift之代码延时执行</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/">Swift之注释的规范</a></li>  <li class="file active"><a href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">Swift之代码延时执行</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -280,71 +285,115 @@
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar-o"></i></span>
-                <h1 class="title"><a href="/archives/2021/">2021</a></h1>
-            </div>
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title"><a href="/archives/2021/05/">2021-05</a><span class="archive-list-count">1</span></h1>
-            </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-Swift之代码延时执行的N个方法" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Swift学习笔记</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Swift/" rel="tag">Swift</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">
+            <time datetime="2021-05-08T03:08:00.000Z" itemprop="datePublished">2021-05-08</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/Swift之代码延时执行的N个方法.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/Swift之代码延时执行的N个方法.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/Swift之代码延时执行的N个方法.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">Swift之代码延时执行</a>
+        <h1 class="article-title" itemprop="name">
+            Swift之代码延时执行
         </h1>
     
 
-                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+        
+        
+            <h1 id="Swift之代码延时执行的N个方法"><a href="#Swift之代码延时执行的N个方法" class="headerlink" title="Swift之代码延时执行的N个方法"></a>Swift之代码延时执行的N个方法</h1><h3 id="GCD（主线程-子线程）"><a href="#GCD（主线程-子线程）" class="headerlink" title="GCD（主线程/子线程）"></a>GCD（主线程/子线程）</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timeWait = <span class="number">10</span></span><br><span class="line"><span class="type">DispatchQueue</span>.main.asyncAfter(deadline: .now() + timeWait) &#123;</span><br><span class="line">	<span class="comment">//Do what you want</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">DispatchQueue</span>.global.asyncAfter(deadline: .now + timeWait) &#123;</span><br><span class="line">  <span class="comment">//Do what you want</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>有关DispatchQueue：</strong></p>
+<p> 一般所有与系统UI刷新的操作都要在main Queue中完成，因此如果在非Main中执行会报Exception，这时就需要将其使用DispatchQueue.man加入主线程中异步执行。</p>
+<p>而非UI相关的工作则放在global Queue中，Queue是一种系统内共享的并行队列。</p>
+<p>Global Queue有四种优先级，由Qos间接决定：</p>
+<blockquote>
+<p><strong>User-interactive</strong>：最高优先级，需要立即完成的任务，以给用户较好体验（主要用于UI刷新、低延迟事件处理，不宜过多使用）</p>
+<p><strong>User-initiated</strong>：用于UI发起异步任务，用于在等待执行的结果（例如打开一个邮件，处理显示邮件的内容）</p>
+<p><strong>Utility</strong>：长时间运行的任务，主要用于计算、网络交互，低优先级</p>
+<p><strong>Background</strong>：任务在运行，但用户感觉不到，对时间不敏感的获取数据等任务，最低优先级。</p>
+</blockquote>
+<h3 id="Timer-必须在主线程中执行"><a href="#Timer-必须在主线程中执行" class="headerlink" title="Timer(必须在主线程中执行)"></a>Timer(必须在主线程中执行)</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timeDelay = <span class="number">3</span></span><br><span class="line"><span class="type">Timer</span>.scheduledTimer(timeInterval: timeDelay, target: <span class="keyword">self</span>, selector(delayExecution), userInfo: <span class="literal">nil</span>, repeats: <span class="literal">false</span>)</span><br></pre></td></tr></table></figure>
+
+
             </div>
-        </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
     
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title"><a href="/archives/2021/04/">2021-04</a><span class="archive-list-count">1</span></h1>
-            </div>
+<nav id="article-nav">
     
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/">Swift之注释的规范</a>
-        </h1>
+        <a href="/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Plus ancien</strong>
+            <div class="article-nav-title">Swift之注释的规范</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
     
 
-                
-            </div>
-        </div>
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title"><a href="/archives/2021/03/">2021-03</a><span class="archive-list-count">1</span></h1>
-            </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2021/03/28/LeetCode%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/">LeetCode个人题解（1-100题）</a>
-        </h1>
-    
 
-                
-            </div>
-        </div>
-    
-</div>
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
 </section>
         </div>
         <footer id="footer">

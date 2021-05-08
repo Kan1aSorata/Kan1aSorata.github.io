@@ -92,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,9 +111,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
+            CATEGORIES: 'Catégories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -147,7 +147,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
     </div>
 
                 </td>
@@ -164,7 +164,7 @@
         
     <div class="widget-wrap" id='categories'>
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>Catégories</span>
             &nbsp;
             <a id='allExpand' href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -180,7 +180,7 @@
                             &nbsp;
                             Swift学习笔记
                         </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/">Swift之注释的规范</a></li>  </ul> 
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2021/04/28/Swift%E4%B9%8B%E6%B3%A8%E9%87%8A%E7%9A%84%E8%A7%84%E8%8C%83/">Swift之注释的规范</a></li>  <li class="file"><a href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">Swift之代码延时执行</a></li>  </ul> 
                     </li> 
                     
                     <li class="directory">
@@ -281,6 +281,110 @@
 </aside>
             
             <section id="main">
+        <article id="post-Swift之代码延时执行的N个方法" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Swift学习笔记</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Swift/" rel="tag">Swift</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">
+            <time datetime="2021-05-08T03:08:00.000Z" itemprop="datePublished">2021-05-08</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/Swift之代码延时执行的N个方法.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/Swift之代码延时执行的N个方法.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/Swift之代码延时执行的N个方法.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/">Swift之代码延时执行</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p><h1 id="Swift之代码延时执行的N个方法"><a href="#Swift之代码延时执行的N个方法" class="headerlink" title="Swift之代码延时执行的N个方法"></a>Swift之代码延时执行的N个方法</h1><h3 id="GCD（主线程-子线程）"><a href="#GCD（主线程-子线程）" class="headerlink" title="GCD（主线程/子线程）"></a>GCD（主线程/子线程）</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timeWait = <span class="number">10</span></span><br><span class="line"><span class="type">DispatchQueue</span>.main.asyncAfter(deadline: .now() + timeWait) &#123;</span><br><span class="line">	<span class="comment">//Do what you want</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">DispatchQueue</span>.global.asyncAfter(deadline: .now + timeWait) &#123;</span><br><span class="line">  <span class="comment">//Do what you want</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>有关DispatchQueue：</strong></p>
+<p> 一般所有与系统UI刷新的操作都要在main Queue中完成，因此如果在非Main中执行会报Exception，这时就需要将其使用DispatchQueue.man加入主线程中异步执行。</p>
+<p>而非UI相关的工作则放在global Queue中，Queue是一种系统内共享的并行队列。</p>
+<p>
+                
+            
+        
+        
+            </div>   
+            <div class="article-more-link">
+                <a href="/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-Swift之注释的规范" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -1217,109 +1321,9 @@
 
 
     
-        <article id="post-Pages使用Hexo在Windows环境下搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link-link" href="/tags/Hexo/" rel="tag">Hexo</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-            <time datetime="2020-01-07T01:41:00.000Z" itemprop="datePublished">2020-01-07</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/Pages使用Hexo在Windows环境下搭建个人博客.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/Pages使用Hexo在Windows环境下搭建个人博客.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a target="_blank" rel="noopener" href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/Pages使用Hexo在Windows环境下搭建个人博客.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">基于github Pages使用Hexo在Windows环境下搭建个人博客</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p><p>写在前面：首次编写教程，如发现有任何的错误，欢迎点击关于的联系方式联系我~</p>
-<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>Git是搭建hexo的基础，我们要使用他输入许多命令，可以理解为好用的Windows cmd指令<br><a target="_blank" rel="noopener" href="https://gitforwindows.org/">点击此处下载Git</a><br>下载并安装，一路点击下一步。<br>完成后点开Windows键在最近添加的位置有一个软件名为<strong>Git Bash</strong>，我们稍后就用它来配置hexo。<br>打开Git Bash，运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
-<p>以检测是否安装成功<br>若出现<br><a href="https://sm.ms/image/26h51tfA3UPzJLQ" target="_blank"><img src="https://i.loli.net/2020/01/07/26h51tfA3UPzJLQ.jpg" ></a><br>则成功。</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Node.js</a>对于Windows用户来说，选择LTS版本即可。<br>同样在Git Bash中运行</p>
-<p>
-                
-            
-        
-        
-            </div>   
-            <div class="article-more-link">
-                <a href="/2020/01/07/Pages%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8Windows%E7%8E%AF%E5%A2%83%E4%B8%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
+        <nav id="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Suiv &amp;raquo;</a>
+        </nav>
     
 </section>
         </div>

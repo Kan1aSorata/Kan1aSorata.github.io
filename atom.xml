@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-04-28T08:45:02.670Z</updated>
+  <updated>2021-05-08T03:59:12.222Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Swift之代码延时执行</title>
+    <link href="http://example.com/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/"/>
+    <id>http://example.com/2021/05/08/Swift%E4%B9%8B%E4%BB%A3%E7%A0%81%E5%BB%B6%E6%97%B6%E6%89%A7%E8%A1%8C%E7%9A%84N%E4%B8%AA%E6%96%B9%E6%B3%95/</id>
+    <published>2021-05-08T03:08:00.000Z</published>
+    <updated>2021-05-08T03:59:12.222Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Swift之代码延时执行的N个方法"><a href="#Swift之代码延时执行的N个方法" class="headerlink" title="Swift之代码延时执行的N个方法"></a>Swift之代码延时执行的N个方法</h1><h3 id="GCD（主线程-子线程）"><a href="#GCD（主线程-子线程）" class="headerlink" title="GCD（主线程/子线程）"></a>GCD（主线程/子线程）</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timeWait = <span class="number">10</span></span><br><span class="line"><span class="type">DispatchQueue</span>.main.asyncAfter(deadline: .now() + timeWait) &#123;</span><br><span class="line"><span class="comment">//Do what you want</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">DispatchQueue</span>.global.asyncAfter(deadline: .now + timeWait) &#123;</span><br><span class="line">  <span class="comment">//Do what you want</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>有关DispatchQueue：</strong></p><p> 一般所有与系统UI刷新的操作都要在main Queue中完成，因此如果在非Main中执行会报Exception，这时就需要将其使用DispatchQueue.man加入主线程中异步执行。</p><p>而非UI相关的工作则放在global Queue中，Queue是一种系统内共享的并行队列。</p><p>Global Queue有四种优先级，由Qos间接决定：</p><blockquote><p><strong>User-interactive</strong>：最高优先级，需要立即完成的任务，以给用户较好体验（主要用于UI刷新、低延迟事件处理，不宜过多使用）</p><p><strong>User-initiated</strong>：用于UI发起异步任务，用于在等待执行的结果（例如打开一个邮件，处理显示邮件的内容）</p><p><strong>Utility</strong>：长时间运行的任务，主要用于计算、网络交互，低优先级</p><p><strong>Background</strong>：任务在运行，但用户感觉不到，对时间不敏感的获取数据等任务，最低优先级。</p></blockquote><h3 id="Timer-必须在主线程中执行"><a href="#Timer-必须在主线程中执行" class="headerlink" title="Timer(必须在主线程中执行)"></a>Timer(必须在主线程中执行)</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timeDelay = <span class="number">3</span></span><br><span class="line"><span class="type">Timer</span>.scheduledTimer(timeInterval: timeDelay, target: <span class="keyword">self</span>, selector(delayExecution), userInfo: <span class="literal">nil</span>, repeats: <span class="literal">false</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Swift之代码延时执行的N个方法&quot;&gt;&lt;a href=&quot;#Swift之代码延时执行的N个方法&quot; class=&quot;headerlink&quot; title=&quot;Swift之代码延时执行的N个方法&quot;&gt;&lt;/a&gt;Swift之代码延时执行的N个方法&lt;/h1&gt;&lt;h3 id=&quot;GCD（主</summary>
+      
+    
+    
+    
+    <category term="Swift学习笔记" scheme="http://example.com/categories/Swift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Swift" scheme="http://example.com/tags/Swift/"/>
+    
+  </entry>
   
   <entry>
     <title>Swift之注释的规范</title>
